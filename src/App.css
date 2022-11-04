@@ -31,3 +31,35 @@ body {
     margin-left: 15px;
 }
 
+.card {
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.card--info {
+    margin-left: 25px;
+}
+
+.card--location {
+    display: flex;
+    align-items: center;
+}
+
+.card--location>* {
+    margin-right: 7px;
+}
+
+.card--location--img {
+    width: 10px;
+}
+
+.card--title {
+    font-size: 25px;
+}
+
+.card--date {
+    font-size: 12px;
+}
