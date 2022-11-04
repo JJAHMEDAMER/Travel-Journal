@@ -1,7 +1,6 @@
 import React from "react";
 
 //imgs
-import img from "../assets/sydney.png";
 import locationImg from "../assets/location.png";
 
 function Card(props) {
@@ -10,7 +9,7 @@ function Card(props) {
       <img className="card--img" src={props.imageUrl} alt="Img" />
       <div className="card--info">
         <div className="card--location">
-          <img className="card--location--img" src={locationImg} />
+          <img className="card--location--img" src={locationImg} alt="Location"/>
           <p className="card--location--text">{props.location}</p>
           <a className="card--location--link" href={props.googleMapsUrl}>
             View on Google Maps
