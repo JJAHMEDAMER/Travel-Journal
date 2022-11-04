@@ -1,0 +1,33 @@
+:root {
+    --red: #F55A5A;
+    --blue: #2B283A;
+    --grey: #918E9B;
+    --white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+.navbar {
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.navbar--text {
+    font-size: 15px;
+    color: var(--white);
+    margin-left: 15px;
+}
+
