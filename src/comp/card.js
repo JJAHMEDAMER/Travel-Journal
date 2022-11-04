@@ -4,24 +4,25 @@ import React from "react";
 import img from "../assets/sydney.png";
 import locationImg from "../assets/location.png";
 
-function Card() {
+function Card(props) {
   return (
     <div className="card">
-      <img className="card--img" src={img} alt="Img" />
+      <img className="card--img" src={props.imageUrl} alt="Img" />
       <div className="card--info">
         <div className="card--location">
           <img className="card--location--img" src={locationImg} />
-          <p className="card--location--text">JAPAN</p>
-          <a className="card--location--link" href="">
+          <p className="card--location--text">{props.location}</p>
+          <a className="card--location--link" href={props.googleMapsUrl}>
             View on Google Maps
           </a>
         </div>
-        <h1 className="card--title">Mount Fuji</h1>
-        <h2 className="card--date">12 Jan, 2021</h2>
+        <h1 className="card--title">{props.title}</h1>
+        <div className="card--date">
+          <p>{props.startDate}</p>
+          <p>{props.endDate}</p>
+        </div>
         <p className="card--description">
-          Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters
-          (12,380 feet). Mount Fuji is the single most popular tourist site in
-          Japan, for both Japanese and foreign tourists.
+          {props.description}
         </p>
       </div>
     </div>
